@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>PDF Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!--    <script src="https://kit.fontawesome.com/b4bc57ed92.js" crossorigin="anonymous"></script>-->
+
+    <style>
+        span {
+            color: #7AC043;
+            font-size: large;
+
+        }
+        html, body {
+            font-size: 12px;
+        }
+        .custom-control-input-green:checked~.custom-control-label::before {
+            border-color: #28a745 !important;
+            background-color: #28a745 !important;
+        }
+        #table1 {
+            border-collapse: separate;
+            border-spacing: 4px 4px;
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+        #table2 {
+            border-collapse: separate;
+            border-spacing: 0px 16px;
+        }
+        td {
+
+            border-radius: 4px;
+        }
+
+    </style>
+
+</head>
+<body class="bg-light">
+
+<div class="container">
+    <main>
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="https://yourindex-downloads.s3.amazonaws.com/social_futures.png" alt="" height="60">
+            <h2>Consent Form For: {{login_name}}</h2>
+            <p style="text-align: left;" class="lead"><br>headspace Lismore is a program of Social Futures. Within headspace Lismore we support young people with mental health, physical health (including sexual health), alcohol and other drug services, as well as work and study support. We have staff here who also work at other organisations. You may decide to see them. If you do, the staff member will keep confidential notes about your progress and care on a secure database. Some staff at headspace may also keep confidential notes about your care within their own organisation’s database.
+
+                <br><br>There may be times when it would help us to help you if we can talk with other people to obtain and/or provide your information. We need your permission to do this. In the box below please write down any people or services, who you give us permission to obtain or provide information. For example, this may be parents, carers, aunties, uncles, a doctor, school counsellor, psychologist, psychiatrist (It’s ok if you don’t remember). Please be also aware that we may need to talk to your local hospital or community mental health service in case of an emergency.
+            </p>
+        </div>
+
+        <div class="">
+            <div class="">
+                <h4 class="mb-3"></h4>
+                <form class="" >
+                    <div style="background-color: #f5f5f5" class="row g-3">
+                        <table class="p-2" id="table1">
+                            <thead>
+                            <tr>
+                                <th style="background-color: #A8D08D; color: #343434; border-radius: 4px; border: 1px solid #A8D08D;text-align: center; font-weight: 400;">Name of person or organisation from whom <b>WE<br> CAN</b> obtain and/or provide your information:</th>
+
+                                <th style="background-color: #A8D08D; color: #343434; border-radius: 4px; border: 1px solid #A8D08D;text-align: center; font-weight: 400;">Name of person or organisation from whom <b>WE<br> CANNOT</b> obtain and/or provide your information:</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td style="border-radius: 4px; border: 1px solid olivedrab;background-color: lightgray;padding-right: 20px; margin: 8px;" class="p-2"> Name 1</td>
+                                <td style="border-radius: 4px; border: 1px solid olivedrab;background-color: lightgray; margin: 8px;" class="p-2"> Name 2</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                        <i class="fa-solid fa-square-check">
+                            <table id="table2">
+                                <tr>
+                                    <td>To offer you the best possible care at headspace, we also like to share information
+                                        and make decisions as a team. Do you consent to this? &nbsp;&nbsp; <span><b>{{team_not_ok}}</b></span>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>Do you consent to headspace Lismore keeping notes about you in our databases?&nbsp;&nbsp;
+                                        <span><b>{{keep_notes}}</b></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Do you give consent for headspace Lismore to speak with anyone else regarding appointment times? &nbsp;&nbsp;
+                                        <span><b>{{appointment_times_auth}}</b></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Name: <span><b>{{appointment_times_name}}</b></span>  Number: <span><b>{{appoinment_phone_number}}</b></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Do you give consent for headspace Lismore to speak with parents/carers regarding the services you are accessing at headspace Lismore?
+                                        <span><b>{{parents_no}}</b></span>
+                                        <span style="color: #6eb456"></span>&nbsp;&nbsp;<br>Name: <span  class="bigger"><b>{{parent_name}}</b></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Has a staff person from headspace discussed with you your rights and responsibilities?
+                                        <span><b>{{rights_yes-no}}</b></span></td>
+                                </tr>
+
+                            </table>
+
+
+                    </div>
+
+                    <table>
+                        <tr>
+                            <th>Do you give consent for headspace to:</th>
+                            <td style="width: 20%;"></td>
+                            <th>YES</th>
+                            <td style="width: 20%;"></td>
+                            <th>NO</th>
+                        </tr>
+                        <tr>
+                            <td>- Contact you by SMS?</td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"  checked/></td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"/></td>
+                        </tr>
+                        <tr>
+                            <td>- Send mail to your home address?</td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"  checked/></td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"/></td>
+                        </tr>
+                        <tr>
+                            <td>- Contact you via email?</td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"  checked/></td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"/></td>
+                        </tr>
+                        <tr>
+                            <td>- Contact you on the phone number you have provided?</td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"  checked/></td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"/></td>
+                        </tr>
+                        <tr>
+                            <td>- Contact you for feedback survey/research/ evaluation? </td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"  checked/></td>
+                            <td style="width: 20%;"></td>
+                            <td><input class="custom-control-input custom-control-input-green" type="checkbox"/></td>
+                        </tr>
+                    </table>
+
+                    <hr class="my-4">
+
+                    <div>
+                        <div style="border: 1px solid grey" class="row">
+                            <div style="background-color: #A8D08D; border: 1px solid grey" class="col text-center"><h4>SIGNATURES BELOW</h4>
+                            </div>
+                        </div>
+                        <div style="border-left: 1px solid grey; border-right: 1px solid grey" class="row">
+                            <div  class="col"><p><b>Young person:</b> I have read and understood about consent and confidentiality and my rights and responsibilities</p>
+                            </div>
+                        </div>
+                        <div style="border-left: 1px solid grey; border-right: 1px solid grey" class="row">
+                            <div " class="col"><p>Name: <span  class="bigger"><b>{{login_name}}</b></span>&nbsp;&nbsp; Signature/initials: {{signature}}&nbsp;&nbsp; Date: <span  class="bigger"><b>{{date_signed}}</b></span></p>
+                        </div>
+                    </div>
+                    <div style="border-left: 1px solid grey; border-right: 1px solid grey" class="row">
+                        <div  class="col"><p><b>Parent guardian (if young person is under 16):</b> I have read and understood about consent and confidentiality</p>
+                        </div>
+                    </div>
+
+                    <div style="border-left: 1px solid grey; border-right: 1px solid grey" class="row">
+                        <div  class="col"><p>Name: <span  class="bigger"><b>{{parent_name}}</b></span>&nbsp;&nbsp; Signature/initials: {{signature}}&nbsp;&nbsp; Date: <span  class="bigger"><b>{{parent_date_signed}}</b></span></p>
+                        </div>
+                    </div>
+
+                    <div style="border-left: 1px solid grey; border-right: 1px solid grey" class="row">
+                        <div  class="col"><p><b>Headspace staff member:</b></p>
+                        </div>
+                    </div>
+
+                    <div style="border-left: 1px solid grey; border-right: 1px solid grey; border-bottom: 1px solid grey" class="row">
+                        <div  class="col"><p>Name: <span  class="bigger"><b>{{staff_name}}</b></span>&nbsp;&nbsp; Signature/initials: {{staff_signature}}&nbsp;&nbsp; Date: <span  class="bigger"><b>{{staff_date_signed}}</b></span></p>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+        <div class="p-2"></div>
+        <div style="border: 1px solid grey" class="row">
+            <div style="background-color: lightblue; border: 1px solid grey" class="col text-center"><h4>OFFICE USE ONLY</h4>
+            </div>
+        </div>
+
+        <div style="border-bottom: 1px solid grey; border-left: 1px solid grey; border-right: 1px solid grey" class="p-2 row">
+            <div  class="col-4">Consent form completed by Young Person</div><div class="col-4">Date: {{signed_date}}</div><div class="col-4"></p>
+        </div>
+        </div>
+
+
+
+        <div style="border-bottom: 1px solid grey; border-left: 1px solid grey; border-right: 1px solid grey" class="p-2 row">
+            <div  class="col-4">Consent form completed by Young Person</div><div class="col-4">Date: {{signed_date}}</div><div class="col-4"></div>
+        </div>
+        <div style="border-bottom: 1px solid grey; border-left: 1px solid grey; border-right: 1px solid grey" class="p-2 row">
+            <div  class="col-4">Expected review of Consent form</div><div class="col-4">Date: {{review_date}}</div><div class="col-4"></div>
+        </div>
+        <div style="border-bottom: 1px solid grey; border-left: 1px solid grey; border-right: 1px solid grey" class="p-2 row">
+            <div  class="col-4">Form uploaded to Best Practice</div><div class="col-4">Date: {{upload_date}}</div><div class="col-4">By Whom: {{form_uploaded_by}}</div>
+        </div>
+        <div style="border-bottom: 1px solid grey; border-left: 1px solid grey; border-right: 1px solid grey" class="p-2 row">
+            <div  class="col-4">Notes Updated In Best Practice</div><div class="col-4">Date: {{notes_updated_date}}</div><div class="col-4">By Whom: {{notes_edited_by}}</div>
+        </div>
+</div>
+
+
+
+</div>
+
+</div>
+
+<hr class="my-4">
+
+
+</form>
+</div>
+</div>
+</main>
+
+<footer class="my-5 pt-5 text-muted text-center">
+    <b>Remember:</b> you can change/update your consent at any time
+</footer>
+</div>
+
+
+
+</body>
+</html>
